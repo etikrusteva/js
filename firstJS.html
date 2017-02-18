@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function myFunction() {
+    document.getElementById("demo").innerHTML = "eho.";
+}
+
+
+</script>
+</head>
+
+<body>
+
+<h1>eti</h1>
+
+<p id="demo">tova shte se promeni</p>
+
+<button type="button" onclick="myFunction()">first</button>
+<button type="button" onclick="myFunction({
+    document.getElementById("demo").innerHTML = "aide.";
+}
+})">second</button>
+
+<p id="smqtane"></p>
+<script>
+document.getElementById("smqtane").innerHTML = 6 + 3;
+</script>
+
+<p id="krava"></p>
+<script>
+var x, y ,z;
+x = 5;
+y = 7;
+z = x+ y;
+document.getElementById("krava").innerHTML = z;
+</script>
+
+
+<p id="test"></p>
+<script> 
+var price1 = 5;
+var price2 = 6;
+var total = price1 + price2;
+document.getElementById("test").innerHTML =
+"The total is: " + total;
+
+</script>
+
+<p id="ne6to"></p>
+<script>
+function functionFirst(y, x, z) {
+    return x+y-z;
+}
+document.getElementById("ne6to").innerHTML = functionFirst(9,4,2)
+
+</script>
+
+
+</body>
+
+</html> 
